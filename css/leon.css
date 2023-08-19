@@ -79,12 +79,18 @@ body{
 /*Start Header*/
 .header{
     padding: 20px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+    
     
 }
 .header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .header .logo{
     width: 60px;
@@ -156,6 +162,7 @@ body{
 /*End Header*/
 /*Start Landing Section*/
 .landing{
+    z-index: -1;
     background-image: url(https://wallpaperaccess.com/full/686998.jpg);
     background-size: cover;
     height: calc(100vh + 64px);
@@ -463,6 +470,7 @@ body{
 .contact .info .social i {
     margin-left: 10px;
 }
+
 @media (max-width: 767px){
     .contact .info .link,
     .contact .info .label{
@@ -485,3 +493,18 @@ footer span {
     color: var(--Main-color);
 }
 /*End Footer Section*/
+::-webkit-scrollbar{
+    height: 10px;
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--Main-color);
+    border-radius: 7px;
+    margin-inline: 100px;
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--sec--color);
+    border: 5px;
+    border-radius: 7px;
+}
